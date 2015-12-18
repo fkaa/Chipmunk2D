@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#ifdef WIN32
+#if defined(WIN32) || defined(__WIN32) || defined(__WIN32__)
 	// For alloca().
 	#include <malloc.h>
 	#define CP_EXPORT __declspec(dllexport)
